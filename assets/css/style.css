@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px | 10 / 16 * 100 */
+}
+
+/* Khoi phuc lai co chu mac dinh tinh theo rem */
+
+body {
+    font-size: 1.6rem; 
+}
