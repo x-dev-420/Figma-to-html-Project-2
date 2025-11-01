@@ -1,13 +1,104 @@
+
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%; /* 1rem = 10px | 10 / 16 * 100 */
+  font-size: 62.5%; /* 1rem = 10px | 10 / 16 * 100 */
 }
 
 /* Khoi phuc lai co chu mac dinh tinh theo rem */
 
 body {
-    font-size: 1.6rem; 
+  font-size: 1.6rem; 
+  font-family: "Poppins", sans-serif;
+}
+
+/* =========================== common ============================== */
+
+a {
+  text-decoration: none;
+}
+
+.main-content {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 186px;
+  padding: 0 16px;
+  line-height: 68px;
+  color: #FFF;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  border-radius: 1.4rem;
+  background: #1EBFC1;
+}
+
+/* =========================== header ============================== */
+/* .header {
+  background-color: violet;
+} */
+
+.header.fixed {
+  position: sticky;
+  top: -28px;
+}
+
+.header .body {
+  display: flex;
+  align-items: center;
+  padding: 36px 0 8px;
+}
+
+.nav {
+  margin: auto;
+}
+
+.nav ul {
+  display: flex;
+}
+
+.nav a {
+  color: #2F3A3B;
+  font-size: 1.6rem;
+  /* background-color: blue; */
+  padding: 8px 19.5px;
+}
+
+.nav li.active a,
+.nav a:hover {
+  color: #2F3A3B;
+  text-shadow: 1px 0 0 currentColor;
+}
+
+.nav li.active {
+  color: #2F3A3B;
+  text-shadow: 1px 0 0 currentColor;
+}
+
+.header .btn-sign {
+  min-width: 108px;
+  line-height: 48px;
+  background-color: #fff;
+  color: #494949;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.header .btn-sign-up {
+  color: #1EBFC1;
+  border-radius: 6px;
+  border: 1px solid #1EBFC1;
+}
+
+.header .btn-sign:hover {
+  color: #1EBFC1;
+  border-radius: 6px;
+  border: 1px solid #1EBFC1;
 }
